@@ -19,12 +19,6 @@
   
   /* Navbar */
 
-
-
-
-
-
-
   .cancel {
     display: flex;
     flex-direction: column;
@@ -34,10 +28,6 @@
     cursor: pointer;
     z-index: 1001; 
 }
-
-
-
-
 
   .Navbar{
     display: flex;
@@ -80,27 +70,28 @@ nav ul li:last-child {
     flex-shrink: 0; 
 }
 
-nav ul li button {
+nav ul li:hover {
     background: none;
     border: 2px solid;
+    border-color: lightgreen;
     padding: 10px 20px; 
     border-radius: 50%;
     transition: all 0.3s ease;
 }
 
-nav ul li button:hover {
-    background-color: #111;
+nav ul li:hover {
+    background-color: #d5fbd5;
 }
 
-nav ul li button a {
+nav ul li a {
     color: #333;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 600;
 }
 
-nav ul li button:hover a{
-    color: #fff;
+nav ul li:hover a{
+    color: #000;
 }
   nav .menu-btn i{
     color:  #333;
@@ -172,27 +163,9 @@ font-weight: 500;
     }
   }
   
-
-
-
-
-
-
-
   .home a {
     position: relative; 
     text-decoration: none; 
-}
-.home a::after {
-    content: ""; 
-    position: absolute; 
-    bottom: -10px; 
-    left: 0; 
-    width: 100%; 
-    height: 2px; 
-    background-color: black; 
-    transform: scaleX(1); 
-    transition: transform 0.3s ease; 
 }
 
 
@@ -213,22 +186,19 @@ nav ul li {
   }
   
   .hero span {
-      font-size: 5.3em;
+      font-size: 2.5em;
       font-weight: 200;
   }
   
   .hero h1 {
-      font-size: 14.8em;
-      font-weight: 100;
+      font-size: 4em;
   }
   .image-container {
     position: absolute;
-    width: 6%; 
+    width: 3%; 
     height: auto; 
     border-radius: 50%;
     overflow: hidden;
-    top: 25%;
-    left: 55%;
     transform: translate(-50%, -50%); 
     z-index: -1;
    background-color: #9BBB44;
@@ -460,7 +430,7 @@ textarea {
     height: 100px;
 }
 
-button {
+.contactBtn {
     display: inline-block;
     padding: 10px 30px;
     background-color: white;
@@ -472,7 +442,7 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+.contactBtn:hover {
     background-color: black;
     color: white;
 }
@@ -594,16 +564,18 @@ button:hover {
 }
 .blog .title{
    flex: 2;
-   
-    font-size: 2.3em;
+    font-size: 2.1em;
     font-weight: 200;
 }
 .blog .para{
+    background-color: #d5fbd5;
     font-size: 19px;
     flex: 8;
     line-height: 1.4;
     font-weight: 500;
 }
+
+
 
 
 
@@ -743,7 +715,7 @@ button:hover {
       }
   
       .hero h1 {
-          font-size: 9em;
+          font-size: 3em;
       }
   }
   
@@ -755,7 +727,7 @@ button:hover {
       }
   
       .hero h1 {
-          font-size: 10em;
+          font-size: 3em;
       }
      .hero .content span{
         font-size: 0.7em;
@@ -820,7 +792,7 @@ button:hover {
       }
   
       .hero h1 {
-          font-size:8em;
+          font-size:3em;
       }
   
      
@@ -849,7 +821,7 @@ button:hover {
       }
   
       .hero h1 {
-          font-size: 5em;
+          font-size: 3em;
       }
   
     
@@ -857,3 +829,38 @@ button:hover {
   
 
 
+  .intro-section {
+    background-color: #d5fbd5; /* Light green background */
+    padding: 30px;
+    font-size: 18px;
+}
+.intro-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+.intro-text a:hover {
+    text-decoration: underline;
+}
+
+#univ-logo {
+    overflow: hidden;
+}
+
+.lecturer-section {
+    background-color: lightyellow; /* Light blue background */
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+.lecturer-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+.lecturer-text a {
+    color: #198754; /* Green color for links */
+    text-decoration: none;
+}
+.lecturer-text a:hover {
+    text-decoration: underline;
+}
